@@ -1,5 +1,3 @@
-say finish loop
-
 execute align xyz positioned ~0.5 ~ ~0.5 run summon minecraft:area_effect_cloud ~ ~ ~ {Duration:-1,Age:-2147483648,WaitTime:-2147483648,Tags:["raycaster"]}
 
 execute store result score @s raycast_x run data get entity @e[type=minecraft:area_effect_cloud,distance=..2,tag=raycaster,limit=1] Pos[0] 1
